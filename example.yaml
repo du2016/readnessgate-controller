@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: centos
+  name: centos
+  namespace: default
+spec:
+  containers:
+    - args:
+        - sleep
+        - 10d
+      image: centos
+      imagePullPolicy: Always
+      name: centos
+  readinessGates:
+    - conditionType: "www.example.com/feature-1"
