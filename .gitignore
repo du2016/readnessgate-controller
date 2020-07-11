@@ -1,0 +1,5 @@
+readnessgate*
+
+!readnessgate*.go
+
+.idea
